@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="32dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/go_back"
+                android:src="@android:drawable/ic_menu_revert"
+                app:tint="@color/primary" />
+
+            <TextView
+                style="@style/TitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/ride_details" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Route Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@android:drawable/ic_dialog_map"
+                        android:contentDescription="Map Icon"
+                        app:tint="@color/primary" />
+
+                    <TextView
+                        android:id="@+id/tvRideId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="@string/ride_id"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_secondary" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvFrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/from_label"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:src="@android:drawable/arrow_down_float"
+                    android:contentDescription="Arrow Icon"
+                    app:tint="@color/primary" />
+
+                <TextView
+                    android:id="@+id/tvTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/to_label"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_marginBottom="24dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/card_elevation_color"
+                    android:layout_marginBottom="24dp" />
+
+                <!-- Details Grid -->
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:rowCount="3">
+
+                    <!-- Date -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_columnWeight="1"
+                        android:layout_marginBottom="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/date_label" android:textSize="12sp" android:textColor="@color/text_secondary" />
+                        <TextView android:id="@+id/tvDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:textStyle="bold" android:textColor="@color/text_primary" />
+                    </LinearLayout>
+
+                    <!-- Time -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_columnWeight="1"
+                        android:layout_marginBottom="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_label" android:textSize="12sp" android:textColor="@color/text_secondary" />
+                        <TextView android:id="@+id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:textStyle="bold" android:textColor="@color/text_primary" />
+                    </LinearLayout>
+
+                    <!-- Seats -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_columnWeight="1"
+                        android:layout_marginBottom="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/seats_label" android:textSize="12sp" android:textColor="@color/text_secondary" />
+                        <TextView android:id="@+id/tvSeats" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:textStyle="bold" android:textColor="@color/text_primary" />
+                    </LinearLayout>
+
+                    <!-- Fare -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_columnWeight="1"
+                        android:layout_marginBottom="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fare_label" android:textSize="12sp" android:textColor="@color/text_secondary" />
+                        <TextView android:id="@+id/tvFare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$0.00" android:textStyle="bold" android:textColor="@color/success" />
+                    </LinearLayout>
+
+                    <!-- Vehicle -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_columnWeight="1"
+                        android:layout_marginBottom="16dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vehicle_reg_label" android:textSize="12sp" android:textColor="@color/text_secondary" />
+                        <TextView android:id="@+id/tvVehicleReg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:textStyle="bold" android:textColor="@color/text_primary" />
+                    </LinearLayout>
+                </GridLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/card_elevation_color"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="24dp" />
+
+                <!-- Driver Details -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/driver_label" android:textSize="12sp" android:textColor="@color/text_secondary" android:layout_marginBottom="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvDriverName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Driver Name"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_primary" />
+
+                        <TextView
+                            android:id="@+id/tvDriverContact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Contact Number"
+                            android:textColor="@color/primary"
+                            android:textStyle="bold"
+                            android:layout_marginTop="4dp" />
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnMessageDriver"
+                        style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginEnd="8dp"
+                        app:icon="@android:drawable/ic_menu_send"
+                        app:iconTint="@color/secondary"
+                        android:contentDescription="@string/message_driver" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnCallDriver"
+                        style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        app:icon="@android:drawable/ic_menu_call"
+                        android:contentDescription="@string/call_driver" />
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnBookRide"
+                    style="@style/PrimaryButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/book_ride"
+                    app:icon="@android:drawable/ic_input_add" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Return Button -->
+        <Button
+            android:id="@+id/btnReturnToMenu"
+            style="@style/PrimaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/back_to_menu" />
+
+    </LinearLayout>
+</ScrollView>

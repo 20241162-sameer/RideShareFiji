@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "762161627602",
+    "project_id": "ridesharefiji-dce0c",
+    "storage_bucket": "ridesharefiji-dce0c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762161627602:android:03f2f2f0a5a81507de080b",
+        "android_client_info": {
+          "package_name": "com.example.ridesharefiji"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChr4pAH-KnvrJJc-OPlaV0ReMcaCBuP08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">RideShare Fiji</string>
+
+    <!-- General -->
+    <string name="back_to_menu">Back to Main Menu</string>
+    <string name="return_to_menu">Return to Main Menu</string>
+    <string name="go_back">Go Back</string>
+    <string name="logout">Logout</string>
+    <string name="cancel">Cancel</string>
+    <string name="save_changes">Save Changes</string>
+
+    <!-- Main Menu -->
+    <string name="tagline">Connecting rides across the country</string>
+    <string name="find_a_ride">Find a Ride</string>
+    <string name="offer_a_ride">Offer a Ride</string>
+    <string name="request_a_ride">Request a Ride</string>
+    <string name="view_ride_requests">View Ride Requests</string>
+    <string name="my_dashboard">My Dashboard</string>
+    <string name="view_profile">View Profile</string>
+
+    <!-- Auth -->
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_in">Sign In</string>
+    <string name="new_user_create_account">New user? Create an account</string>
+    <string name="join_the_ride">Join the Ride</string>
+    <string name="create_account_subtitle">Create your account to get started</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number_hint">Phone Number (e.g. +679...)</string>
+    <string name="password">Password</string>
+    <string name="register_as">Register as</string>
+    <string name="driver">Driver</string>
+    <string name="passenger">Passenger</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_have_account">Already have an account? Login</string>
+
+    <!-- Ride Details -->
+    <string name="ride_details">Ride Details</string>
+    <string name="ride_id">Ride ID</string>
+    <string name="from_label">From</string>
+    <string name="to_label">To</string>
+    <string name="date_label">DATE</string>
+    <string name="time_label">TIME</string>
+    <string name="seats_label">SEATS</string>
+    <string name="fare_label">FARE</string>
+    <string name="vehicle_reg_label">VEHICLE REG</string>
+    <string name="driver_label">DRIVER</string>
+    <string name="call_driver">Call Driver</string>
+    <string name="message_driver">Message Driver</string>
+    <string name="book_ride">Book This Ride</string>
+    <string name="ride_full">Ride Full</string>
+
+    <!-- Empty States -->
+    <string name="no_rides_found">No rides found yet.\nTry searching something else!</string>
+    <string name="no_requests_found">No ride requests found.\nBe the first to request one!</string>
+    <string name="empty_my_rides">You haven\'t offered any rides yet.</string>
+    <string name="empty_my_requests">You haven\'t requested any rides yet.</string>
+
+    <!-- Forms -->
+    <string name="pickup_location">Pickup Location</string>
+    <string name="destination">Destination</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_time">Select Time</string>
+    <string name="available_seats">Available Seats</string>
+    <string name="fare_amount">Fare ($)</string>
+    <string name="vehicle_reg_number">Vehicle Reg Number</string>
+    <string name="publish_ride">Publish Ride</string>
+    <string name="post_request">Post Request</string>
+    <string name="driver_vehicle_details">Driver &amp; Vehicle Details</string>
+
+</resources>

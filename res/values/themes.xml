@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RideShareFiji" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/primary</item>
+    </style>
+
+    <style name="Theme.RideShareFiji" parent="Base.Theme.RideShareFiji" />
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/background</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.RideShareFiji</item>
+    </style>
+
+    <!-- Custom Styles for Vibrant Look -->
+    <style name="TitleText">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="PrimaryButton" parent="Widget.Material3.Button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.LargeComponent</item>
+    </style>
+
+    <style name="SecondaryButton" parent="Widget.Material3.Button.TonalButton">
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="ShapeAppearance.LargeComponent" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerSize">16dp</item>
+    </style>
+
+</resources>

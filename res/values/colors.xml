@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Vibrant Blue & Orange Palette for RideShareFiji -->
+    <color name="primary">#2563EB</color> <!-- Bright Blue -->
+    <color name="primary_variant">#1E40AF</color>
+    <color name="secondary">#F59E0B</color> <!-- Vibrant Orange/Amber -->
+    <color name="secondary_variant">#D97706</color>
+
+    <color name="background">#F8FAFC</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="error">#DC2626</color>
+
+    <color name="text_primary">#1E293B</color>
+    <color name="text_secondary">#64748B</color>
+
+    <color name="card_elevation_color">#E2E8F0</color>
+
+    <!-- Accent colors for status -->
+    <color name="success">#10B981</color>
+    <color name="info">#3B82F6</color>
+</resources>
